@@ -384,17 +384,17 @@ h3 {
   background-color: #fe7f4c;
   display: grid;
   justify-content: center;
+  width: 1170px;
 }
 
 .functioning-div .functioning-left {
   position: relative;
   padding: 40px;
-  width: 1170px;
+  
 }
 
 .functioning-div .functioning-right {
   padding: 40px;
-  width: 1170px;
 }
 
 .functioning-div .title {
