@@ -389,7 +389,6 @@ h3 {
 .functioning-div .functioning-left {
   position: relative;
   padding: 40px;
-  
 }
 
 .functioning-div .functioning-right {
@@ -619,10 +618,13 @@ h3 {
 .price-div-mobile {
   display: none;
 }
+.creche-div-mobile {
+  display: none;
+}
 
 .price-div {
   background-image: radial-gradient(
-    circle at center,
+    circle at bottom,
     rgba(254, 127, 76, 0.4),
     #f7ecdf 40%
   );
@@ -726,6 +728,115 @@ h3 {
 .price-div .price-right .blob1:hover,
 .price-div .price-right .blob2:hover,
 .price-div .price-right .blob3:hover {
+  opacity: 0.5;
+}
+
+.creche-div {
+  background-image: radial-gradient(
+    circle at top,
+    rgba(254, 127, 76, 0.4),
+    #f7ecdf 40%
+  );
+  width: 1170px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  padding: 60px;
+}
+
+.creche-div .price-left {
+  padding: 40px;
+}
+
+.creche-div .price-left h1 {
+  font-size: 3rem;
+  color: #fe7f4c;
+  margin-bottom: 60px;
+}
+
+.creche-div .price-left p {
+  font-size: 1.2rem;
+  color: #353535;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.creche-div .price-item {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.creche-div .price-item img {
+  width: 30px;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.creche-div .price-item:hover img {
+  opacity: 0.5;
+}
+
+.creche-div .price-right {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  position: relative;
+}
+
+.creche-div .price-right .price-img1 {
+  position: relative;
+  box-shadow: -10px 10px #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.creche-div .price-right .price-img2 {
+  position: relative;
+  box-shadow: 10px 10px #ffffff;
+  top: 30%;
+  right: 15%;
+  z-index: 1;
+}
+
+.creche-div .price-right .blob,
+.creche-div .price-right .blob1,
+.creche-div .price-right .blob2,
+.creche-div .price-right .blob3 {
+  width: 10%;
+  position: absolute;
+  z-index: 2;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.creche-div .price-right .blob {
+  top: 20%;
+  right: 90%;
+}
+
+.creche-div .price-right .blob1 {
+  top: 70%;
+  left: 30%;
+}
+
+.creche-div .price-right .blob2 {
+  top: 10%;
+  left: 50%;
+}
+
+.creche-div .price-right .blob3 {
+  top: 50%;
+  left: 85%;
+}
+
+.creche-div .price-right .blob:hover,
+.creche-div .price-right .blob1:hover,
+.creche-div .price-right .blob2:hover,
+.creche-div .price-right .blob3:hover {
   opacity: 0.5;
 }
 
@@ -991,7 +1102,7 @@ h3 {
     display: grid;
     width: auto;
     grid-template-rows: 0.2fr 1.7fr;
-    justify-self: center;
+    justify-self: start;
     padding: 60px;
     text-align: left;
   }
@@ -1022,6 +1133,52 @@ h3 {
   }
 
   .price-div-mobile .price-right {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 0 100px;
+  }
+
+  .creche-div {
+    display: none;
+    width: auto;
+  }
+
+  .creche-div-mobile {
+    display: grid;
+    width: auto;
+    grid-template-rows: 0.2fr 1.7fr;
+    justify-self: start;
+    padding: 60px;
+    text-align: left;
+  }
+
+  .creche-div-mobile .price-item {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .creche-div-mobile .price-item img {
+    width: 40px;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+
+  .creche-div-mobile .price-item img:hover {
+    opacity: 0.5;
+  }
+
+  .creche-div-mobile .price-left {
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 0 100px;
+    margin-bottom: 30px;
+  }
+
+  .creche-div-mobile .price-right {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -1322,6 +1479,31 @@ h3 {
   }
 
   .price-div-mobile .price-item img {
+    width: 30px;
+  }
+
+  .creche-div-mobile {
+    padding: 20px;
+  }
+
+  .creche-div-mobile .price-left {
+    padding: 0px;
+  }
+
+  .creche-div-mobile .price-left h1 {
+    font-size: 2rem;
+  }
+
+  .creche-div-mobile .price-right {
+    padding: 0px;
+  }
+
+  .creche-div-mobile .price-item {
+    font-size: 1.2rem;
+    color: #353535;
+  }
+
+  .creche-div-mobile .price-item img {
     width: 30px;
   }
 
