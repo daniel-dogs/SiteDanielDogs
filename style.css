@@ -92,6 +92,7 @@ h3 {
   gap: 10px;
   font-weight: 600;
   color: var(--main-color);
+  margin: 0 30px;
 }
 
 .content .top-header .left-header .pin,
@@ -528,7 +529,7 @@ h3 {
 }
 
 .call-to-action .title {
-  font-size: 54px;
+  font-size: 52px;
   color: #353535;
 }
 
