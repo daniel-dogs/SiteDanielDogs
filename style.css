@@ -624,11 +624,11 @@ h3 {
 }
 
 .price-div {
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle at bottom,
     rgba(254, 127, 76, 0.4),
     #f7ecdf 40%
-  );
+  ); */
   width: 1170px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -733,11 +733,11 @@ h3 {
 }
 
 .creche-div {
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle at top,
     rgba(254, 127, 76, 0.4),
     #f7ecdf 40%
-  );
+  ); */
   width: 1170px;
   display: grid;
   grid-template-columns: 1fr 1fr;
